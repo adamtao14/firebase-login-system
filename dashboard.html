@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Dosis');
+      body{
+        margin: 0;
+        font-family: 'Dosis', sans-serif;
+      }
+
+      #header{
+        width: 100%;
+        height: 100px;
+        padding-top: 50px;
+        text-align: center;
+        color: black;
+        font-size: 34px;
+        box-shadow: 10px 10px 5px #aaaaaa;
+      }
+      h2{
+        margin: 0;
+      }
+      .container{
+        width: 100%;
+        text-align: center;
+        margin-top: 90px;
+      }
+      .first{
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+
+      }
+      a{
+        text-decoration: none;
+        font-size: 30px;
+        color: red;
+      }
+      a:hover{
+        color: black;
+      }
+      p{
+        text-decoration: none;
+        font-size: 30px;
+        color: red;
+      }
+      p:hover{
+        color: black;
+        cursor: pointer;
+      }
+      footer{
+        text-align: center;
+        border-top: 1px solid black;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        left: 0
+        right:0;
+        width: 100%;
+      }
+
+    </style>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyATTWKKsp1XIcGHSnccsRKceQ9SlpKVKTw",
+        authDomain: "smarter-599c0.firebaseapp.com",
+        databaseURL: "https://smarter-599c0.firebaseio.com",
+        projectId: "smarter-599c0",
+        storageBucket: "smarter-599c0.appspot.com",
+        messagingSenderId: "806336694798"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+   <div id="header">
+      
+        <h2>Welcome <span id="name-container"></span></h2>
+
+    </div>
+
+    <div class="container">
+       
+        <div class="first">
+        
+          <a href="">Account</a>
+
+        </div>
+        <div class="first">
+        
+          <a href="">My Files</a>
+
+        </div>
+        <div class="first">
+        
+          <p class="first" id="basta_esci">LogOut</p>
+
+        </div>
+
+
+    </div>
+    <footer>
+      
+      Smarter © 2018
+
+    </footer>
+  </body>
+</html>
